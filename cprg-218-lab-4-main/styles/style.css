@@ -60,7 +60,6 @@ main{
     width:100%;
     height:100vh;
     background-color: rgb(133, 196, 131);
-    margin-top: 20px;
     background-image: url(../assets/bubbletea.png), url(../assets/background.jpg);
     background-size: 120vh, cover;
     background-repeat: no-repeat;
@@ -71,7 +70,8 @@ main{
 
 .hero-text{
     margin-left: 20%;
-    max-width: 600px;
+    max-width: 100%;
+    height: 60vh;
 }
 
 .btn{
@@ -110,7 +110,7 @@ main{
 
 .card{
     background-color: transparent;
-    width: 24rem;
+    width: 100%;
     flex-wrap: wrap;
     text-align: center;
   }
@@ -148,7 +148,6 @@ main{
     overflow: hidden;
   }
 
-
   /* FOOTER */
 
   .footer{
@@ -170,7 +169,7 @@ main{
   }
 
   .footer-links li {
-    margin-right: 0;
+    margin-left: 80px;
     margin-bottom: 40px;
 }
 
@@ -185,3 +184,146 @@ main{
     max-width: 600px;
     margin: 20px auto;
   }
+
+  .copyright{
+    margin-left: 20px;
+  }
+
+  /* Media Queries */
+
+  /*MOBILE */
+
+
+  @media screen and (max-width: 768px) {
+
+  .hero-text {
+    align-items: center;
+      max-width: 400px;
+      height: 55vh;
+      padding-left: 10vh;
+  }
+
+  main{
+    background-size: cover;
+    height: 60vh;
+    margin-top: 10px;
+  }
+
+  h4{
+    font-size: 18px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #1D1D1D;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.footer{
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.footer-links{
+  margin-top: 20px;
+}
+
+.map-container{
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.card-container{
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.card{
+  width: 100%;
+}
+
+}
+
+/* TABLETS */
+
+@media screen and (max-width: 1199px) {
+  .hero-text {
+      margin-left: 10px;
+      max-width: 300px;
+  }
+
+  main{
+    background-size: 80vh, cover;
+  }
+
+  .footer-links {
+      flex-direction: column;
+  }
+
+  .card-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+  .accordion {
+      padding: 14px;
+      font-size: 14px;
+  }
+
+  .panel {
+      padding: 0 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+      font-size: 24px;
+      line-height: 18px;
+  }
+
+  h2 {
+      font-size: 14px;
+      line-height: 18px;
+  }
+
+  .hero-text {
+      margin-left: 5px;
+      max-width: 250px;
+  }
+
+  .nav-links {
+      top: 50px;
+      padding: 5px;
+  }
+
+  .footer {
+      padding: 10px;
+  }
+
+  .footer-links {
+      gap: 10px;
+  }
+
+  .map-container {
+      max-width: 100%;
+  }
+}
