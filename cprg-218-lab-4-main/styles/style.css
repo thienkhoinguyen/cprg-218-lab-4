@@ -14,14 +14,14 @@ h1{
 }
 
 h2{
-    font-size: 24px;
+    font-size: 32px;
     line-height: 32px;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
 }
 
-h4{
+h3{
     font-size: 22px;
     color: rgb(3, 26, 0);
     font-family: 'Montserrat', sans-serif;
@@ -135,7 +135,10 @@ main{
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-    
+  }
+
+  .accordion span {
+    margin-right: 20px;
   }
 
 .active, .accordion:hover {
@@ -206,6 +209,10 @@ main{
     flex: 1;
     max-width: 600px;
     margin: 20px auto;
+  }
+
+  .copyright{
+    margin-left: 20px;
   }
 
 
@@ -285,10 +292,21 @@ main{
 /* TABLETS */
 
 @media screen and (max-width: 1199px) {
+  h1 {
+    font-size: 28px;
+    line-height: 18px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 18px;
+}
+  
+  
   .hero-text {
       max-width: 300px;
   }
-
+  
   main{
     background-size: 80vh, cover;
   }
@@ -318,16 +336,7 @@ main{
 }
 
 @media screen and (max-width: 1200px) {
-  h1 {
-      font-size: 24px;
-      line-height: 18px;
-  }
-
-  h2 {
-      font-size: 14px;
-      line-height: 18px;
-  }
-
+ 
   .hero-text {
       max-width: 250px;
   }
