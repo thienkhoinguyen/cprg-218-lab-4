@@ -223,18 +223,18 @@ main{
 
 @media screen and (max-width: 768px) {
 
-.hero-text {
+  .hero-text {
     text-align: center;
     margin: 0 auto;
     height: 50VH;
     max-width: 80%;
   }
-
+  
 main{
-    background-size: 100vh, cover;
-    height: 60vh;
-    margin-top: 10px;
-  }
+  background-size: 60vh cover;
+  height: 60vh;
+  margin-top: 10px;
+}
 
 .nav-links {
     display: none;
@@ -302,13 +302,15 @@ h2 {
     line-height: 18px;
 }
   
-  
   .hero-text {
-      max-width: 300px;
+    max-width: 50%;
+    margin-right: 50%;
+    margin-bottom: 8rem;
   }
   
   main{
     background-size: 80vh, cover;
+    height:50vh;
   }
 
   .footer-links {
@@ -336,9 +338,24 @@ h2 {
 }
 
 @media screen and (max-width: 1200px) {
+
+  h1 {
+    font-size: 52px;
+    line-height: 18px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 18px;
+}
  
   .hero-text {
       max-width: 250px;
+  }
+
+  main{
+    background-size: 120vh, cover;
+    height:90vh;
   }
 
   .nav-links {
