@@ -61,7 +61,7 @@ main{
     height:100vh;
     background-color: rgb(133, 196, 131);
     margin-top: 20px;
-    background-image: url(../assets/bubbletea.png), url(../assets/background.jpg);
+    background-image: url(../assets/Drinks/bubbletea.png), url(../assets/background.jpg);
     background-size: 120vh, cover;
     background-repeat: no-repeat;
     background-position: bottom, center;
