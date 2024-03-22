@@ -1,0 +1,159 @@
+/* Media Queries */
+
+  /*MOBILE */
+
+
+  @media screen and (max-width: 768px) {
+
+    .hero-text {
+      text-align: center;
+      margin: 0 auto;
+      height: 50VH;
+      max-width: 80%;
+    }
+    
+  main{
+    background-size: 60vh cover;
+    height: 60vh;
+    margin-top: 10px;
+  }
+  
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      background-color: #1D1D1D;
+  }
+  
+  .footer{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  
+  .footer-links{
+    margin-top: 20px;
+  }
+  
+  .map-container{
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  .card-container{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .card{
+    width: 100%;
+  }
+  
+  .accordion {
+    padding: 14px;
+    font-size: 14px;
+  }
+  
+  .panel {
+    width: 100%;
+    max-width: 60%;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  .video iframe {
+    height: 50vh;
+  }
+    }
+    
+  /* TABLETS */
+  
+  @media screen and (max-width: 1199px) {
+    h1 {
+      font-size: 28px;
+      line-height: 18px;
+  }
+  
+  h2 {
+      font-size: 18px;
+      line-height: 18px;
+  }
+    
+    .hero-text {
+      max-width: 50%;
+      margin-right: 50%;
+      margin-bottom: 8rem;
+    }
+    
+    main{
+      background-size: 80vh, cover;
+      height:50vh;
+    }
+  
+    .footer-links {
+        flex-direction: column;
+    }
+  
+    .card-container{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  }
+  
+    .accordion {
+        padding: 14px;
+        font-size: 14px;
+    }
+  
+    .panel {
+      width: 100%;
+      max-width: 60%; 
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1200px) {
+  
+    h1 {
+      font-size: 52px;
+      line-height: 18px;
+  }
+  
+  h2 {
+      font-size: 24px;
+      line-height: 18px;
+  }
+   
+    .hero-text {
+        max-width: 250px;
+    }
+  
+    main{
+      background-size: 120vh, cover;
+      height:90vh;
+    }
+  
+    .nav-links {
+        top: 50px;
+        padding: 5px;
+    }
+  
+    .footer {
+        padding: 10px;
+    }
+  
+    .footer-links {
+        gap: 10px;
+    }
+  
+    .map-container {
+        max-width: 100%;
+    }
+  }

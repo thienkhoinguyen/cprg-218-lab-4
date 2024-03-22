@@ -4,36 +4,121 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/styles/reset.css">
-  <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
-  <link rel="stylesheet" type="text/css" href="/styles/global.css">
-  <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styles/global.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src="https://kit.fontawesome.com/fcc878934f.js" crossorigin="anonymous"></script>
   <title>Common Website Features</title>
 </head>
-<body>
-  <section class="hero-container">
-    <!-- Remove and add hero banner HTML -->
-    <div class="remove-assignment-content">
-      <h1>Hero Banner</h1>
+
+<header>
+  <nav id="External-nav">
+      <div class="logo"><h2>Bubblicious</h2></div>
+      <div>
+      <ul class="nav-links">
+          <li>MENU</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+          <li>ORDER ONLINE</li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+      </ul>
+      </div>
+      </nav>
+</header>    
+  <main>
+    <div class="hero-text">
+      <h1>Bubblicious</h1>
+      <h2>Serving bobba for <br>over 20 years!<br></h2>
     </div>
-  </section>
-  <section class="container content-container">
-    <!-- Remove and add content HTML -->
-    <div class="remove-assignment-content">
-      <h1>Content</h1>
+  </main>
+  <div class="content">
+    <h1>Menu</h1>
+    <h2>Sourcing the best ingredients to make the best bobba</h2>
+  </div>
+  <div class="btn">
+    <button id="btn-alert">View More</button>
     </div>
+  <section class="container">
+    <ul class="card-container">
+      <li class="card">
+        <img src="assets/Drinks/chocolate.jpg" alt="chocolate drink in plastic up with whipcream and a orea cookie">
+        <div class="card-content">
+          <h3 class="header">
+            Chocolate Bubbletea
+          </h3>
+          <p>
+            Mixed with the best chocolate
+          </p>
+          </div>
+      </li>
+      <li class="card">
+        <img src="assets/Drinks/Fruit.jpg" alt="orange fruit bubbletea drink with pink lid and logo and ooglong bubble tea house">
+        <div class="card-content">
+          <h3 class="header">
+            Fruit bubbletea
+          </h3>
+          <p>
+            Fresh orange passion fruit 
+          </p>
+          </div>
+      </li>
+      <li class="card">
+        <img src="assets/Drinks/brownsugar.jpg" alt="brown sugar bubbletea in plastic cup with pearls along with whipcream">
+        <div class="card-content">
+          <h3 class="header">
+            Brown Sugar milk tea
+          </h3>
+          <p>
+            brown sugar milk tea and extras
+          </p>
+          </div>
+      </li>
+    </ul>
+    <h2>Our Story</h2>
+    <P>Welcome to Bubblicious, your one-stop destination for the most delightful bubble tea experience! At Bubblicious, we pride ourselves on crafting the perfect blend of flavors and textures to bring you a refreshing and indulgent bubble tea journey.
+      Immerse yourself in a world of tantalizing options, from classic favorites like Taro Milk Tea and Matcha Green Tea to our signature creations like the Tropical Paradise Burst and Lychee Boba Bliss. Each sip is a burst of flavor, and every pearl is a tiny explosion of delight in your mouth.
+      Our commitment to quality goes beyond just the taste. We source the finest tea leaves, freshest fruits, and premium tapioca pearls to ensure that every cup is a true masterpiece. Whether you prefer it iced, hot, or blended, our extensive menu caters to every palate and mood.     
+      Not only do we prioritize exceptional taste, but we also strive to provide a seamless online shopping experience. Explore our user-friendly website, customize your drink to perfection, and have it delivered to your doorstep, all from the comfort of your home. Bubblicious is not just a beverage; it's an experience waiting to be savored.</P>
   </section>
-  <section class="container accordion-container">
-    <!-- Remove and add accordion HTML -->
-    <div class="remove-assignment-content">
-      <h1>Accordion</h1>
+  <section class="accordions">
+    <!-- Accordions -->
+    <button class="accordion"><span>SEE MORE</span><i class="fa-solid fa-mug-hot"></i></button>
+    <div class="panel">
+      <img src="assets/Drinks/brownsugar.jpg" alt="brown sugar bubbletea in plastic cup with pearls along with whipcream">
+        <div class="card-content">
+          <h3 class="header">
+            Brown Sugar milk tea
+          </h3>
+          <p>
+            brown sugar milk tea and extras
+          </p>
+          </div>
     </div>
-  </section>
-  <section class="footer-container">
-    <!-- Remove and add footer HTML -->
-    <div class="remove-assignment-content">
-      <h1>Footer</h1>
+    <button class="accordion"><span>WHAT IS BUBBLETEA?</span><i class="fa-solid fa-video"></i></button>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZAGSkE9TAqU?si=_706HkboWQT3sCUs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+  
+    <button class="accordion"><span>ABOUT US</span><i class="fa-solid fa-circle-info"></i></button>
+    <div class="panel">
+      <p>placeholder</p>
+    </div>
+
+   </section>
+
+  <section class="footer">
+    <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.2690113597773!2d-114.05643092340625!3d51.066583971716526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716542ca5cc87b%3A0xbf33817146652a6!2sBubblemania!5e0!3m2!1sen!2sca!4v1709534867860!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
   </section>
-</body>
-</html>
+
+  <div class="copyright">
+    <p>&copy; <span id="currentYear"></span> BUBBLICOUS CANADA INC. All Rights Reserved.</p>
+    </div>
